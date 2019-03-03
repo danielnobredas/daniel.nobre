@@ -1,0 +1,104 @@
+.gameboy{
+    width: 100vw;
+    height: 100vh;
+    background-color: #373f47;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: bit;
+}
+
+.tela{
+    display: flex;
+    position: relative;
+    align-self: center;
+    width: 80em;
+    justify-content: center;
+    height: 42em;
+    background-color: #3e5f38;
+    color: #192717;
+    border: 50px solid #777777 !important;
+    margin: 0 auto;   
+}
+
+[hidden]{
+    display: none !important;
+}
+
+.base{
+    position: relative;
+    width: 20em;
+    display: flex;
+    justify-content: center;
+}
+
+.controle-1{
+    align-self: center;
+    background-color: white;
+    height: 15em;
+    margin: 2em;
+    width: 5em;
+    position: relative;
+}
+
+.controle-1::after{
+    content: '';
+    position: absolute;
+    display: flex;
+    top: 5em;
+    left: -5em;
+    width: 15em;
+    height: 5em;
+    background-color: white;
+}
+
+.controle-1:nth-child(1) svg{
+    position: absolute;
+    top: 2em;
+    left: 1.5em;
+    justify-self: center;
+    transform: scale(2)
+}
+
+.controle-2{
+    display: flex;
+    align-self: center;
+    position: relative;
+    color: white;
+}    
+
+.controle-2 .btn-floating:hover {
+    transition: all 200ms;
+    cursor: pointer;
+    background-color: #960707;
+}
+.controle-2 .btn-floating:active {
+    transition: all 200ms;
+    cursor: pointer;
+    background-color: #b41313;
+}
+.controle-2 .btn-floating{
+    transition: all 200ms;
+    display: flex;
+    background-color: #cc0505;
+    margin: 2em;
+    border-radius: 50%;
+    justify-content: center;
+    align-content: center;
+    width: 5em;
+    height: 5em;
+}    
+
+.controle-2 h1{
+    text-shadow: 2px 2px #242424;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
