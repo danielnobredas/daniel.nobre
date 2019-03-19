@@ -28,7 +28,6 @@ export class AppComponent implements AfterViewInit {
         }
       });
   }
-
   getPage(outlet) {
     return outlet.activatedRouteData['page'] || 'home';
   }
